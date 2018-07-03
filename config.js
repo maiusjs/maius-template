@@ -16,5 +16,11 @@ module.exports = {
       ],
     },
   ],
+
   static: { },
+
+  logger: {
+    directory: __dirname + '/logs',
+    level: 'DEBUG',
+  },
 };
