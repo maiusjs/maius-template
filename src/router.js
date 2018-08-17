@@ -1,7 +1,4 @@
 module.exports = ({ router, controller }) => {
-  router.get('/', controller.home.info);
+  router.get('/', controller.index.index);
 };
 
-// module.exports = [
-//   { match: '/', handle: ['home.info'] }
-// ];
