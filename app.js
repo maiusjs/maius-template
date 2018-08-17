@@ -1,10 +1,14 @@
-const Maius = require('maius');
+const Maius = require('maius').default;
 
-const port = 3000;
+const PORT = 3123;
 const app = new Maius({
   rootDir: __dirname,
-});
+  port: PORT,
+})
 
-app.listen(port).then(() => {
-  console.log(`APP Started, http://localhost:${port}`);
-});
+app
+  .listen()
+  .then(() => {
+    console.log(`APP Started, http://localhost:${PORT}`);
+    console.log(`maius version - v${app.version}`);
+  });
